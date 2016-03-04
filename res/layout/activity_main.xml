@@ -1,55 +1,96 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}"
+    tools:ignore="HardcodedText" >
+
+    <Button
+        android:id="@+id/button_toggle"
+        style="@drawable/button_unactive_released"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/button_unactive_released" />
+
+    <TextView
+        android:id="@+id/text_bpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ritmo de la base: 80 bpm"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical" >
+        android:layout_height="wrap_content"
+        android:gravity="center" >
 
-        <Button
-            android:id="@+id/button_toggle"
-            style="@drawable/button_unactive_released"
+        <TextView
+            android:id="@+id/text_pokito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="60dp"
-            android:background="@drawable/button_unactive_released" />
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:text="Pokito"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <SeekBar
+            android:id="@+id/seekBar_bpm"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center" >
+            android:layout_weight="3.12"
+            android:progress="25" />
 
-            <TextView
-                android:id="@+id/text_pokito"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end|center_vertical"
-                android:text="Pokito"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/text_excesivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="Excesivo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
 
-            <SeekBar
-                android:id="@+id/rythm_bpm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="3.12" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
 
-            <TextView
-                android:id="@+id/text_excesivo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="start|center_vertical"
-                android:text="Excesivo"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/button_sound1"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_yeah_released"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/button_sound2"
+            style="@drawable/button_aja_released"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_aja_released"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/button_sound3"
+            style="@drawable/button_uuh_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_uuh_released"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

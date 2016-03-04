@@ -1625,9 +1625,15 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int button_active_pressed=0x7f020033;
         public static final int button_active_released=0x7f020034;
-        public static final int button_unactive_pressed=0x7f020035;
-        public static final int button_unactive_released=0x7f020036;
-        public static final int ic_launcher=0x7f020037;
+        public static final int button_aja_pressed=0x7f020035;
+        public static final int button_aja_released=0x7f020036;
+        public static final int button_unactive_pressed=0x7f020037;
+        public static final int button_unactive_released=0x7f020038;
+        public static final int button_uuh_pressed=0x7f020039;
+        public static final int button_uuh_released=0x7f02003a;
+        public static final int button_yeah_pressed=0x7f02003b;
+        public static final int button_yeah_released=0x7f02003c;
+        public static final int ic_launcher=0x7f02003d;
     }
     public static final class id {
         public static final int action_bar=0x7f0a0031;
@@ -1646,6 +1652,9 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int always=0x7f0a0014;
         public static final int beginning=0x7f0a001b;
+        public static final int button_sound1=0x7f0a0044;
+        public static final int button_sound2=0x7f0a0045;
+        public static final int button_sound3=0x7f0a0046;
         public static final int button_toggle=0x7f0a003f;
         public static final int checkbox=0x7f0a0029;
         public static final int collapseActionView=0x7f0a0015;
@@ -1672,7 +1681,6 @@ containing a value of this type.
         public static final int progress_circular=0x7f0a0007;
         public static final int progress_horizontal=0x7f0a0008;
         public static final int radio=0x7f0a002b;
-        public static final int rythm_bpm=0x7f0a0041;
         public static final int search_badge=0x7f0a0035;
         public static final int search_bar=0x7f0a0034;
         public static final int search_button=0x7f0a0036;
@@ -1683,6 +1691,7 @@ containing a value of this type.
         public static final int search_plate=0x7f0a0039;
         public static final int search_src_text=0x7f0a003a;
         public static final int search_voice_btn=0x7f0a003e;
+        public static final int seekBar_bpm=0x7f0a0042;
         public static final int shortcut=0x7f0a002a;
         public static final int showCustom=0x7f0a0010;
         public static final int showHome=0x7f0a0011;
@@ -1690,8 +1699,9 @@ containing a value of this type.
         public static final int split_action_bar=0x7f0a0004;
         public static final int submit_area=0x7f0a003c;
         public static final int tabMode=0x7f0a000c;
-        public static final int text_excesivo=0x7f0a0042;
-        public static final int text_pokito=0x7f0a0040;
+        public static final int text_bpm=0x7f0a0040;
+        public static final int text_excesivo=0x7f0a0043;
+        public static final int text_pokito=0x7f0a0041;
         public static final int title=0x7f0a0027;
         public static final int up=0x7f0a0001;
         public static final int useLogo=0x7f0a0013;
@@ -1751,8 +1761,11 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f030018;
     }
     public static final class raw {
-        public static final int ponmelabase=0x7f050000;
-        public static final int pupuchipuchi=0x7f050001;
+        public static final int aja=0x7f050000;
+        public static final int ponmelabase=0x7f050001;
+        public static final int pupuchipuchi=0x7f050002;
+        public static final int uuh=0x7f050003;
+        public static final int yeah=0x7f050004;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
