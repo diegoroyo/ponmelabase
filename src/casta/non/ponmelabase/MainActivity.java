@@ -176,14 +176,13 @@ public class MainActivity extends Activity {
 		streamIds[0] = soundPool.play(soundIds[0], 1, 1, 1, 0, 1);
 	    
 		// PU PUCHI PU-CHI
-		handler.postDelayed(runnableBase, 3000);
+		handler.postDelayed(runnableBase, 3000);  
 	}
 
 	// Para la base
 	private void stopSound() {
 		soundPool.stop(streamIds[0]);
 		soundPool.stop(streamIds[1]);
-		
 		handler.removeCallbacks(runnableBase);
 	}
 
